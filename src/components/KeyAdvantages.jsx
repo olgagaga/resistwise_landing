@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import { useContactForm } from '../context/ContactFormContext';
 
 const Section = styled.section`
   padding: 6rem 2rem;
@@ -83,6 +84,8 @@ const CTAButton = styled.button`
 `;
 
 const KeyAdvantages = () => {
+  const { openContactForm } = useContactForm();
+  
   const features = [
     {
       icon: '🤖',
@@ -118,8 +121,8 @@ const KeyAdvantages = () => {
           ))}
         </FeaturesGrid>
 
-        <CTAButton onClick={() => window.location.href = '#consultation'}>
-          Записаться на консультацию
+        <CTAButton onClick={openContactForm}>
+          Связаться с нами
         </CTAButton>
       </Container>
     </Section>

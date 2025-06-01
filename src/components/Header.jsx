@@ -1,5 +1,6 @@
 import styled from '@emotion/styled';
 import { useState, useEffect } from 'react';
+import { useContactForm } from '../context/ContactFormContext';
 
 const HeaderContainer = styled.header`
   position: fixed;
@@ -100,6 +101,7 @@ const MenuButton = styled.button`
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { openContactForm } = useContactForm();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -143,7 +145,10 @@ const Header = () => {
               {link.label}
             </NavLink>
           ))}
-          <ContactButton href="#contact">
+          <ContactButton onClick={() => {
+            openContactForm();
+            setIsMenuOpen(false);
+          }}>
             Связаться с нами
           </ContactButton>
         </NavLinks>
