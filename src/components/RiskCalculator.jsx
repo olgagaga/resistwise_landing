@@ -212,7 +212,7 @@ const RiskCalculator = () => {
   };
 
   return (
-    <Section>
+    <Section id="calculator">
       <Container>
         <Title>Калькулятор риска антибиотикорезистентности</Title>
         

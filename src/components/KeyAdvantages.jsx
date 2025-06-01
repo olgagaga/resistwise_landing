@@ -102,7 +102,7 @@ const KeyAdvantages = () => {
   ];
 
   return (
-    <Section>
+    <Section id="advantages">
       <Container>
         <Title>Почему государственные учреждения доверяют ResistWise?</Title>
         

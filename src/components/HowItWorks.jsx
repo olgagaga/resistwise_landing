@@ -122,7 +122,7 @@ const HowItWorks = () => {
   ];
 
   return (
-    <Section>
+    <Section id="how-it-works">
       <Container>
         <Title>Назначение антибиотиками с помощью ИИ – умнее, безопаснее, быстрее</Title>
         

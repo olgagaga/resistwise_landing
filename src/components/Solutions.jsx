@@ -113,7 +113,7 @@ const Solutions = () => {
   ];
 
   return (
-    <Section>
+    <Section id="solutions">
       <Container>
         <Title>Разработано для масштабных систем здравоохранения</Title>
 

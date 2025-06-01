@@ -136,7 +136,7 @@ const AMRCrisis = () => {
   ];
 
   return (
-    <Section>
+    <Section id="amr-crisis">
       <Container>
         <Title>
           <span>⚠️</span>

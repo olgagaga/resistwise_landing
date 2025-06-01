@@ -65,7 +65,7 @@ const BackgroundPattern = styled.div`
 
 const KazakhstanProblem = () => {
   return (
-    <Section>
+    <Section id="kazakhstan">
       <BackgroundPattern />
       <Container>
         <QuoteContainer>
