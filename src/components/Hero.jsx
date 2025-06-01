@@ -74,7 +74,7 @@ const Hero = () => {
       </ContentSection>
       <IllustrationSection>
         <Illustration 
-          src="/hero-illustration.svg" 
+          src="/src/assets/Hero.png" 
           alt="AI-powered antibiotic resistance prediction illustration"
         />
       </IllustrationSection>
