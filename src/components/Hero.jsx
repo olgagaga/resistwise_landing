@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import { useContactForm } from '../context/ContactFormContext';
 
 const HeroContainer = styled.div`
   display: flex;
@@ -59,6 +60,7 @@ const Illustration = styled.img`
 `;
 
 const Hero = () => {
+  const { openContactForm } = useContactForm();
   return (
     <HeroContainer>
       <ContentSection>
@@ -68,7 +70,7 @@ const Hero = () => {
         <Subtitle>
           ResistWise помогает врачам назначать правильные антибиотики в каждый момент времени, используя ИИ и актуальные данные.
         </Subtitle>
-        <CTAButton onClick={() => window.location.href = '#demo-form'}>
+        <CTAButton onClick={openContactForm}>
           Запросить демо
         </CTAButton>
       </ContentSection>

@@ -1,5 +1,6 @@
 import styled from '@emotion/styled';
 import { useState } from 'react';
+import { useContactForm } from '../context/ContactFormContext';
 
 const Section = styled.section`
   padding: 6rem 2rem;
@@ -93,6 +94,7 @@ const CTAButton = styled.button`
 
 const Solutions = () => {
   const [activeTab, setActiveTab] = useState('hospitals');
+  const { openContactForm } = useContactForm();
 
   const tabs = [
     {
@@ -137,7 +139,7 @@ const Solutions = () => {
           </TabContent>
         </TabsContainer>
 
-        <CTAButton onClick={() => window.location.href = '#contact'}>
+        <CTAButton onClick={openContactForm}>
           Связаться с нами
         </CTAButton>
       </Container>
