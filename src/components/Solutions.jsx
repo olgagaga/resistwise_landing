@@ -38,7 +38,7 @@ const TabsList = styled.div`
 
 const Tab = styled.button`
   padding: 1rem 2rem;
-  background-color: ${props => props.active ? '#2563eb' : '#f8fafc'};
+  background-color: ${props => props.active ? '#8c1aff' : '#f8fafc'};
   color: ${props => props.active ? 'white' : '#1a1a1a'};
   border: none;
   border-radius: 0.5rem;
@@ -77,7 +77,7 @@ const CTAButton = styled.button`
   display: block;
   margin: 0 auto;
   padding: 1rem 2rem;
-  background-color: #2563eb;
+  background-color: #8c1aff;
   color: white;
   border: none;
   border-radius: 0.5rem;
@@ -87,7 +87,7 @@ const CTAButton = styled.button`
   transition: all 0.2s;
 
   &:hover {
-    background-color: #1d4ed8;
+    background-color: #6600cc;
     transform: translateY(-2px);
   }
 `;

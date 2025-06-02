@@ -34,7 +34,7 @@ const Logo = styled.div`
 `;
 
 const LogoText = styled.span`
-  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  background: linear-gradient(135deg, #8c1aff, #6600cc);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 `;
@@ -65,13 +65,13 @@ const NavLink = styled.a`
   white-space: nowrap;
 
   &:hover {
-    color: #2563eb;
+    color: #8c1aff;
   }
 `;
 
 const ContactButton = styled.a`
   padding: 0.5rem 1.5rem;
-  background-color: #2563eb;
+  background-color: #8c1aff;
   color: white;
   border-radius: 0.5rem;
   text-decoration: none;
@@ -79,7 +79,7 @@ const ContactButton = styled.a`
   transition: all 0.2s;
 
   &:hover {
-    background-color: #1d4ed8;
+    background-color: #6600cc;
     transform: translateY(-2px);
   }
 `;

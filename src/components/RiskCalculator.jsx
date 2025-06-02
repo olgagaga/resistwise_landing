@@ -50,7 +50,7 @@ const Select = styled.select`
 
   &:focus {
     outline: none;
-    border-color: #2563eb;
+    border-color: #8c1aff;
     box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
   }
 `;
@@ -73,7 +73,7 @@ const RadioLabel = styled.label`
   transition: all 0.2s;
 
   &:hover {
-    border-color: #2563eb;
+    border-color: #8c1aff;
   }
 
   input {
@@ -84,7 +84,7 @@ const RadioLabel = styled.label`
 const SubmitButton = styled.button`
   width: 100%;
   padding: 1rem;
-  background-color: #2563eb;
+  background-color: #8c1aff;
   color: white;
   border: none;
   border-radius: 0.5rem;
@@ -94,7 +94,7 @@ const SubmitButton = styled.button`
   transition: background-color 0.2s;
 
   &:hover {
-    background-color: #1d4ed8;
+    background-color: #6600cc;
   }
 `;
 
@@ -146,11 +146,11 @@ const Disclaimer = styled.div`
   padding: 1.5rem;
   background-color: #fef2f2;
   border-radius: 0.5rem;
-  border-left: 4px solid #dc2626;
+  border-left: 4px solid #ff4d4d;
 `;
 
 const DisclaimerTitle = styled.h4`
-  color: #991b1b;
+  color:rgb(172, 20, 20);
   font-size: 1.1rem;
   font-weight: 600;
   margin-bottom: 0.5rem;

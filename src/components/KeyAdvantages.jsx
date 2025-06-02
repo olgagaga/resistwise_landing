@@ -41,7 +41,7 @@ const FeatureCard = styled.div`
 const IconContainer = styled.div`
   width: 64px;
   height: 64px;
-  background: #2563eb;
+  background: #8c1aff;
   border-radius: 1rem;
   display: flex;
   align-items: center;
@@ -68,7 +68,7 @@ const CTAButton = styled.button`
   display: block;
   margin: 0 auto;
   padding: 1rem 2rem;
-  background-color: #2563eb;
+  background-color: #8c1aff;
   color: white;
   border: none;
   border-radius: 0.5rem;
@@ -78,7 +78,7 @@ const CTAButton = styled.button`
   transition: all 0.2s;
 
   &:hover {
-    background-color: #1d4ed8;
+    background-color: #6600cc;
     transform: translateY(-2px);
   }
 `;

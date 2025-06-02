@@ -40,7 +40,7 @@ const Step = styled.div`
 const StepNumber = styled.div`
   font-size: 2rem;
   font-weight: 700;
-  color: #2563eb;
+  color: #8c1aff;
   margin-bottom: 1rem;
 `;
 
@@ -82,7 +82,7 @@ const VideoPlaceholder = styled.div`
 `;
 
 const CTAButton = styled.button`
-  background-color: #2563eb;
+  background-color: #8c1aff;
   color: white;
   padding: 1rem 2rem;
   border: none;
@@ -93,7 +93,7 @@ const CTAButton = styled.button`
   transition: background-color 0.2s;
 
   &:hover {
-    background-color: #1d4ed8;
+    background-color: #8000ff;
   }
 `;
 

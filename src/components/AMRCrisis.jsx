@@ -23,7 +23,7 @@ const Title = styled.h2`
   gap: 1rem;
 
   span {
-    color: #dc2626;
+    color: #ff4d4d;
   }
 `;
 
@@ -48,7 +48,7 @@ const FactCard = styled.div`
   background: #f8fafc;
   padding: 2rem;
   border-radius: 1rem;
-  border-left: 4px solid #2563eb;
+  border-left: 4px solid #8c1aff;
 `;
 
 const FactTitle = styled.h3`
@@ -99,7 +99,7 @@ const CounterTitle = styled.h3`
 const CounterValue = styled.div`
   font-size: 2.5rem;
   font-weight: 700;
-  color: #dc2626;
+  color: #ff4d4d;
   margin-bottom: 0.5rem;
 `;
 

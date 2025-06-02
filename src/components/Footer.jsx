@@ -44,7 +44,7 @@ const Link = styled.a`
   transition: color 0.2s;
 
   &:hover {
-    color: #2563eb;
+    color: #8c1aff;
   }
 `;
 
@@ -59,7 +59,7 @@ const SocialLink = styled.a`
   transition: color 0.2s;
 
   &:hover {
-    color: #2563eb;
+    color: #8c1aff;
   }
 `;
 
@@ -83,13 +83,13 @@ const Input = styled.input`
 
   &:focus {
     outline: none;
-    border-color: #2563eb;
+    border-color: #8c1aff;
   }
 `;
 
 const SubscribeButton = styled.button`
   padding: 0.75rem 1.5rem;
-  background-color: #2563eb;
+  background-color: #8c1aff;
   color: white;
   border: none;
   border-radius: 0.5rem;
@@ -99,7 +99,7 @@ const SubscribeButton = styled.button`
   transition: all 0.2s;
 
   &:hover {
-    background-color: #1d4ed8;
+    background-color: #6600cc;
     transform: translateY(-2px);
   }
 `;

@@ -28,7 +28,7 @@ const ChatWindow = styled.div`
 `;
 
 const ChatHeader = styled.div`
-  background: #2563eb;
+  background: #8c1aff;
   color: white;
   padding: 1rem;
   display: flex;
@@ -80,7 +80,7 @@ const Message = styled.div`
     align-self: flex-start;
     border-bottom-left-radius: 0.25rem;
   ` : `
-    background: #2563eb;
+    background: #8c1aff;
     color: white;
     align-self: flex-end;
     border-bottom-right-radius: 0.25rem;
@@ -104,12 +104,12 @@ const Input = styled.input`
   transition: border-color 0.2s;
 
   &:focus {
-    border-color: #2563eb;
+    border-color: #8c1aff;
   }
 `;
 
 const SendButton = styled.button`
-  background: #2563eb;
+  background: #8c1aff;
   color: white;
   border: none;
   border-radius: 0.5rem;
@@ -121,19 +121,19 @@ const SendButton = styled.button`
   justify-content: center;
 
   &:hover {
-    background: #1d4ed8;
+    background: #6600cc;
     transform: translateY(-1px);
   }
 
   &:disabled {
-    background: #93c5fd;
+    background:rgb(230, 147, 253);
     cursor: not-allowed;
     transform: none;
   }
 `;
 
 const ChatButton = styled.button`
-  background: #2563eb;
+  background: #8c1aff;
   color: white;
   border: none;
   border-radius: 50%;
@@ -148,7 +148,7 @@ const ChatButton = styled.button`
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
   &:hover {
-    background: #1d4ed8;
+    background: #6600cc;
     transform: translateY(-2px);
   }
 `;

@@ -27,7 +27,7 @@ const QuoteContainer = styled.div`
 
 const QuoteMark = styled.div`
   font-size: 8rem;
-  color: #2563eb;
+  color: #8c1aff;
   opacity: 0.1;
   position: absolute;
   top: -2rem;
@@ -74,7 +74,7 @@ const KazakhstanProblem = () => {
             91.9% жителей Казахстана ошибочно верят, что антибиотики необходимы для лечения простуды
           </QuoteText>
           <Source>
-            Источник: Anapova, Guess et all (2019)
+            Источник: Iskakova, N., et all (2023)
           </Source>
         </QuoteContainer>
       </Container>
