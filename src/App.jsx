@@ -4,7 +4,6 @@ import AMRCrisis from './components/AMRCrisis'
 import RiskCalculator from './components/RiskCalculator'
 import KeyAdvantages from './components/KeyAdvantages'
 import Solutions from './components/Solutions'
-import Footer from './components/Footer'
 import Chatbot from './components/Chatbot'
 import ContactForm from './components/ContactForm'
 import LastScreen from './components/LastScreen'
@@ -18,12 +17,11 @@ function AppContent() {
       <FirstScreen />
       <AMRCrisis />
       <HowItWorks />
-      <RiskCalculator />
+      {/* <RiskCalculator /> */}
       <KeyAdvantages />
-      <Solutions />
+      {/* <Solutions /> */}
       <LastScreen />
-      <Footer />
-      <Chatbot />
+      {/* <Chatbot /> */}
       <ContactForm isOpen={isContactFormOpen} onClose={closeContactForm} />
     </div>
   );

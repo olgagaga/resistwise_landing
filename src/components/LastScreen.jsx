@@ -2,10 +2,12 @@ import { useState, useEffect } from 'react';
 import { useContactForm } from '../context/ContactFormContext';
 import heroBg from '../assets/hero-bg.svg';
 import arrowDown from '../assets/ArrowDownCircle.svg';
+import logo from '../assets/logo.svg';
 import './LastScreen.css';
 
 const LastScreen = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { openContactForm } = useContactForm();
 
   useEffect(() => {
@@ -49,6 +51,27 @@ const LastScreen = () => {
           </button>
         </div>
       </div>
+
+      <footer className={`footer-container ${isScrolled ? "footer-scrolled" : ""}`}>
+        <nav className="footer-nav">
+          <a href="#" className="footer-logo">
+            <img src={logo} alt="ResistWise Logo" className="footer-logo-image" />
+          </a>
+
+          <div className={`footer-nav-links ${isMenuOpen ? "footer-nav-open" : ""}`}>
+            {navLinks.map((link) => (
+              <a
+                key={link.href}
+                href={link.href}
+                className="footer-nav-link"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                {link.label}
+              </a>
+            ))}
+          </div>
+        </nav>
+      </footer>
     </div>
   );
 };

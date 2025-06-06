@@ -1,3 +1,19 @@
+@font-face {
+  font-family: 'Arial Rounded MT Bold';
+  src: url('../fonts/Arial Rounded MT Bold/arialroundedmtbold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SF Compact Rounded';
+  src: url('../fonts/Compact-Rounded/FontsFree-Net-SF-Compact-Rounded-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 .contact-form-overlay {
   position: fixed;
   top: 0;
@@ -9,12 +25,13 @@
   justify-content: center;
   align-items: center;
   z-index: 1000;
+  backdrop-filter: blur(8px);
 }
 
 .contact-form-modal {
   background-color: white;
-  padding: 2rem;
-  border-radius: 8px;
+  padding: 2.5rem;
+  border-radius: 2rem;
   width: 90%;
   max-width: 500px;
   position: relative;
@@ -23,63 +40,94 @@
 
 .close-button {
   position: absolute;
-  top: 1rem;
-  right: 1rem;
+  top: 1.5rem;
+  right: 1.5rem;
   background: none;
   border: none;
   font-size: 1.5rem;
   cursor: pointer;
   color: #666;
+  transition: color 0.2s;
+  font-family: 'Arial Rounded MT Bold', Arial, sans-serif;
 }
 
 .close-button:hover {
-  color: #333;
+  color: #00A1FF;
 }
 
 .contact-form-modal h2 {
-  margin-bottom: 1.5rem;
-  color: #333;
+  margin-bottom: 2rem;
+  color: #1a1a1a;
   text-align: center;
+  font-family: 'Arial Rounded MT Bold', Arial, sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
 }
 
 .form-group {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .form-group label {
   display: block;
   margin-bottom: 0.5rem;
-  color: #555;
+  color: #1a1a1a;
+  font-family: 'Arial Rounded MT Bold', Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
 }
 
 .form-group input,
 .form-group textarea {
   width: 100%;
-  padding: 0.75rem;
-  border: 1px solid #ddd;
-  border-radius: 4px;
+  padding: 1rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 1rem;
   font-size: 1rem;
+  font-family: 'SF Compact Rounded', Arial, sans-serif;
+  transition: all 0.2s;
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: #8c1aff;
-  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+  border-color: #00A1FF;
+  box-shadow: 0 0 0 3px rgba(0, 161, 255, 0.1);
 }
 
 .submit-button {
   width: 100%;
-  padding: 0.75rem;
-  background-color: #8c1aff;
+  padding: 1rem 1.5rem;
+  background-color: #00A1FF;
   color: white;
   border: none;
-  border-radius: 4px;
-  font-size: 1rem;
+  border-radius: 1000rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  font-family: 'Arial Rounded MT Bold', Arial, sans-serif;
   cursor: pointer;
-  margin-top: 1rem;
+  transition: all 0.2s;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .submit-button:hover {
-  background-color: #6600cc;
+  transform: translateY(-2px);
+  background-color: #0088cc;
+}
+
+@media (max-width: 768px) {
+  .contact-form-modal {
+    padding: 2rem;
+    width: 95%;
+  }
+
+  .contact-form-modal h2 {
+    font-size: 1.75rem;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    padding: 0.875rem;
+  }
 } 

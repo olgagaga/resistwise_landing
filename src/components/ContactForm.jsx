@@ -14,16 +14,16 @@ const ContactForm = ({ isOpen, onClose }) => {
     <div className="contact-form-overlay">
       <div className="contact-form-modal">
         <button className="close-button" onClick={onClose}>×</button>
-        <h2>Свяжитесь с нами</h2>
+        <h2>Contact Us</h2>
         <form onSubmit={handleSubmit}>
           <div className="form-group">
-            <label htmlFor="name">Имя</label>
+            <label htmlFor="name">Name</label>
             <input
               type="text"
               id="name"
               name="name"
               required
-              placeholder="Ваше имя"
+              placeholder="Your name"
             />
           </div>
           <div className="form-group">
@@ -33,21 +33,21 @@ const ContactForm = ({ isOpen, onClose }) => {
               id="email"
               name="email"
               required
-              placeholder="Ваш email"
+              placeholder="Your email"
             />
           </div>
           <div className="form-group">
-            <label htmlFor="message">Сообщение</label>
+            <label htmlFor="message">Message</label>
             <textarea
               id="message"
               name="message"
               required
-              placeholder="Ваше сообщение"
+              placeholder="Your message"
               rows="4"
             />
           </div>
           <button type="submit" className="submit-button">
-            Отправить сообщение
+            Send Message
           </button>
         </form>
       </div>
