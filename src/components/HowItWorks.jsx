@@ -1,153 +1,72 @@
-import styled from '@emotion/styled';
-
-const Section = styled.section`
-  padding: 6rem 2rem;
-  background-color: #f8fafc;
-`;
-
-const Container = styled.div`
-  max-width: 1200px;
-  margin: 0 auto;
-`;
-
-const Title = styled.h2`
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #1a1a1a;
-  text-align: center;
-  margin-bottom: 4rem;
-`;
-
-const StepsContainer = styled.div`
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  margin-bottom: 4rem;
-`;
-
-const Step = styled.div`
-  background: white;
-  padding: 2rem;
-  border-radius: 1rem;
-  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
-  transition: transform 0.2s;
-
-  &:hover {
-    transform: translateY(-5px);
-  }
-`;
-
-const StepNumber = styled.div`
-  font-size: 2rem;
-  font-weight: 700;
-  color: #8c1aff;
-  margin-bottom: 1rem;
-`;
-
-const StepTitle = styled.h3`
-  font-size: 1.25rem;
-  font-weight: 600;
-  color: #1a1a1a;
-  margin-bottom: 0.5rem;
-`;
-
-const StepDescription = styled.p`
-  color: #4a4a4a;
-  line-height: 1.6;
-`;
-
-const VideoSection = styled.div`
-  margin: 4rem 0;
-  text-align: center;
-`;
-
-const VideoContainer = styled.div`
-  max-width: 800px;
-  margin: 0 auto;
-  aspect-ratio: 16/9;
-  background-color: #e5e7eb;
-  border-radius: 1rem;
-  overflow: hidden;
-  margin-bottom: 2rem;
-`;
-
-const VideoPlaceholder = styled.div`
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #6b7280;
-  font-size: 1.25rem;
-`;
-
-const CTAButton = styled.button`
-  background-color: #8c1aff;
-  color: white;
-  padding: 1rem 2rem;
-  border: none;
-  border-radius: 0.5rem;
-  font-size: 1.1rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background-color 0.2s;
-
-  &:hover {
-    background-color: #8000ff;
-  }
-`;
+import './HowItWorks.css';
 
 const HowItWorks = () => {
   const steps = [
     {
-      number: '1️⃣',
-      title: 'Ввод данных пациента',
-      description: 'Анализы, симптомы, демография'
+      number: '1',
+      title: 'Patient Data Input',
+      description: 'Analysis, symptoms, demographics'
     },
     {
-      number: '2️⃣',
-      title: 'ИИ анализирует тренды резистентности',
-      description: 'Данные из больниц и окружения в реальном времени'
+      number: '2',
+      title: 'AI Analyzes Resistance Trends',
+      description: 'Real-time data from hospitals and environment'
     },
     {
-      number: '3️⃣',
-      title: 'Врач получает оптимизированные рекомендации',
-      description: 'Минимизация избыточного использования антибиотиков'
+      number: '3',
+      title: 'Doctor Receives Optimized Recommendations',
+      description: 'Minimizing unnecessary antibiotic use'
     },
     {
-      number: '4️⃣',
-      title: 'Лучшее лечение, сдерживание устойчивости',
-      description: 'Оптимальные результаты для пациента и системы здравоохранения'
+      number: '4',
+      title: 'Better Treatment, Controlled Resistance',
+      description: 'Optimal outcomes for patients and healthcare system'
     }
   ];
 
   return (
-    <Section id="how-it-works">
-      <Container>
-        <Title>Назначение антибиотиками с помощью ИИ – умнее, безопаснее, быстрее</Title>
-        
-        <StepsContainer>
-          {steps.map((step, index) => (
-            <Step key={index}>
-              <StepNumber>{step.number}</StepNumber>
-              <StepTitle>{step.title}</StepTitle>
-              <StepDescription>{step.description}</StepDescription>
-            </Step>
-          ))}
-        </StepsContainer>
+    <section id="how-it-works" className="how-it-works-section">
+      <div className="how-it-works-container">
+        <h2 className="how-it-works-title">
+          AI-Powered Antibiotic Stewardship
+        </h2>
+        <p className="how-it-works-subtitle">
+          Smarter, Safer, and Faster prescription decisions – ResistWise helps
+          doctors prescribe the right antibiotic at the right time
+        </p>
 
-        <VideoSection>
-          <VideoContainer>
-            <VideoPlaceholder>
-              Видео-демонстрация работы системы
-            </VideoPlaceholder>
-          </VideoContainer>
-          <CTAButton onClick={() => window.location.href = '/cases'}>
-            Посмотреть в действии
-          </CTAButton>
-        </VideoSection>
-      </Container>
-    </Section>
+        <div className="how-it-works-steps-container">
+          {steps.map((step, index) => (
+            <div key={index} className="how-it-works-step">
+              <div className="how-it-works-step-number">
+                <span>{step.number}</span>
+              </div>
+              <div className="how-it-works-step-content">
+                <h3 className="how-it-works-step-title">{step.title}</h3>
+                <span className="how-it-works-step-separator">–</span>
+                <p className="how-it-works-step-description">
+                  {step.description}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* <div className="how-it-works-video-section">
+          <div className="how-it-works-video-container">
+            <div className="how-it-works-video-placeholder">
+              Video demonstration of the system
+            </div>
+          </div>
+          <button
+            className="how-it-works-cta-button"
+            onClick={() => (window.location.href = "/cases")}
+          >
+            See it in action
+          </button>
+        </div> */}
+      </div>
+    </section>
   );
 };
 

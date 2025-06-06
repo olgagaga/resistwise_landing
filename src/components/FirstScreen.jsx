@@ -20,7 +20,7 @@ const FirstScreen = () => {
   }, []);
 
   const handleScrollDown = () => {
-    const nextSection = document.getElementById('how-it-works');
+    const nextSection = document.getElementById('amr-crisis');
     if (nextSection) {
       nextSection.scrollIntoView({ behavior: 'smooth' });
     }

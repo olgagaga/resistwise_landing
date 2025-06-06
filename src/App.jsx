@@ -1,7 +1,6 @@
 import FirstScreen from './components/FirstScreen'
 import HowItWorks from './components/HowItWorks'
 import AMRCrisis from './components/AMRCrisis'
-import KazakhstanProblem from './components/KazakhstanProblem'
 import RiskCalculator from './components/RiskCalculator'
 import KeyAdvantages from './components/KeyAdvantages'
 import Solutions from './components/Solutions'
@@ -16,9 +15,8 @@ function AppContent() {
   return (
     <div className="App">
       <FirstScreen />
-      <HowItWorks />
       <AMRCrisis />
-      <KazakhstanProblem />
+      <HowItWorks />
       <RiskCalculator />
       <KeyAdvantages />
       <Solutions />
@@ -26,7 +24,7 @@ function AppContent() {
       <Chatbot />
       <ContactForm isOpen={isContactFormOpen} onClose={closeContactForm} />
     </div>
-  )
+  );
 }
 
 function App() {
