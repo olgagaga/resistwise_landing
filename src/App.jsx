@@ -7,6 +7,7 @@ import Solutions from './components/Solutions'
 import Footer from './components/Footer'
 import Chatbot from './components/Chatbot'
 import ContactForm from './components/ContactForm'
+import LastScreen from './components/LastScreen'
 import { ContactFormProvider, useContactForm } from './context/ContactFormContext'
 
 function AppContent() {
@@ -20,6 +21,7 @@ function AppContent() {
       <RiskCalculator />
       <KeyAdvantages />
       <Solutions />
+      <LastScreen />
       <Footer />
       <Chatbot />
       <ContactForm isOpen={isContactFormOpen} onClose={closeContactForm} />
