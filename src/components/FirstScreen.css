@@ -1,3 +1,19 @@
+@font-face {
+  font-family: 'Arial Rounded MT Bold';
+  src: url('../fonts/Arial Rounded MT Bold/arialroundedmtbold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SF Compact Rounded';
+  src: url('../fonts/Compact-Rounded/FontsFree-Net-SF-Compact-Rounded-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 .first-screen {
   position: relative;
   min-height: 100vh;
@@ -59,9 +75,10 @@
 .nav-link {
   color: #ffffff;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 400;
   transition: color 0.2s;
   white-space: nowrap;
+  font-family: 'Arial Rounded MT Bold', Arial, sans-serif;
 }
 
 .nav-link:hover {
@@ -69,19 +86,18 @@
 }
 
 .contact-button {
-  padding: 0.5rem 1.5rem;
-  background-color: #8c1aff;
-  color: white;
-  border-radius: 0.5rem;
+  padding: 1rem 1.5rem;
+  background-color: #ffffff;
+  color: #00A1FF;
+  border-radius: 1000rem;
   text-decoration: none;
-  font-weight: 600;
+  /* font-weight: 400; */
   transition: all 0.2s;
   cursor: pointer;
   border: none;
 }
 
 .contact-button:hover {
-  background-color: #6600cc;
   transform: translateY(-2px);
 }
 
@@ -93,6 +109,7 @@
   font-size: 1.5rem;
   cursor: pointer;
   padding: 0.5rem;
+  font-weight: 400;
 }
 
 .hero-content {
@@ -109,50 +126,72 @@
 
 .content-section {
   flex: 1;
-  max-width: 600px;
+  max-width: 100%;
 }
 
 .title {
-  font-size: 2.5rem;
+  font-size: 4rem;
   font-weight: 700;
-  color: #1a1a1a;
+  color: #fff;
   margin-bottom: 1.5rem;
   line-height: 1.2;
+  font-family: 'Arial Rounded MT Bold', Arial, sans-serif;
+  width: 100%;
 }
 
 .subtitle {
   font-size: 1.25rem;
-  color: #4a4a4a;
+  color: #fff;
   margin-bottom: 2rem;
   line-height: 1.6;
+  width:80%;
+  font-family: 'SF Compact Rounded', Arial, sans-serif;
 }
 
 .cta-button {
-  background-color: #8c1aff;
-  color: white;
-  padding: 1rem 2rem;
+  background-color: #fff;
+  color: #00A1FF;
+  padding: 1rem 1.5rem;
   border: none;
-  border-radius: 0.5rem;
+  border-radius: 1000rem;
   font-size: 1.1rem;
   font-weight: 600;
+  font-family: 'Arial Rounded MT Bold', Arial, sans-serif;
   cursor: pointer;
-  transition: background-color 0.2s;
+  transition: all 0.2s;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .cta-button:hover {
-  background-color: #6600cc;
+  transform: translateY(-2px);
 }
 
-.illustration-section {
-  flex: 1;
+.scroll-down {
+  position: absolute;
+  bottom: 2rem;
+  left: calc((100% - 1200px) / 2 + 2rem);
+  z-index: 2;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  width: 40px;
+  height: 40px;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  padding: 0;
 }
 
-.illustration {
-  max-width: 100%;
-  height: auto;
+.scroll-down:hover {
+  transform: translateY(5px);
+}
+
+.scroll-down img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 @media (max-width: 768px) {
@@ -193,5 +232,12 @@
 
   .subtitle {
     font-size: 1.1rem;
+  }
+
+  .scroll-down {
+    bottom: 1rem;
+    left: 1rem;
+    width: 32px;
+    height: 32px;
   }
 } 

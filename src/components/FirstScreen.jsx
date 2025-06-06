@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { useContactForm } from '../context/ContactFormContext';
 import logo from '../assets/logo.svg';
 import heroBg from '../assets/hero-bg.svg';
+import arrowDown from '../assets/ArrowDownCircle.svg';
 import './FirstScreen.css';
 
 const FirstScreen = () => {
@@ -18,13 +19,19 @@ const FirstScreen = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const handleScrollDown = () => {
+    const nextSection = document.getElementById('how-it-works');
+    if (nextSection) {
+      nextSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   const navLinks = [
-    { href: '#how-it-works', label: 'Как это работает' },
-    { href: '#amr-crisis', label: 'УПП кризис' },
-    { href: '#kazakhstan', label: 'Казахстан' },
-    { href: '#calculator', label: 'Калькулятор' },
-    { href: '#advantages', label: 'Преимущества' },
-    { href: '#solutions', label: 'Решения' },
+    { href: '#how-it-works', label: 'HOME' },
+    { href: '#amr-crisis', label: 'ABOUT' },
+    { href: '#kazakhstan', label: 'FEATURES' },
+    { href: '#calculator', label: 'RESULTS' },
+    { href: '#advantages', label: 'CONTACT' },
   ];
 
   return (
@@ -32,22 +39,22 @@ const FirstScreen = () => {
       <div className="hero-background">
         <img src={heroBg} alt="" className="bg-image" />
       </div>
-      
-      <header className={`header-container ${isScrolled ? 'scrolled' : ''}`}>
+
+      <header className={`header-container ${isScrolled ? "scrolled" : ""}`}>
         <nav className="nav">
           <a href="#" className="logo">
             <img src={logo} alt="ResistWise Logo" className="logo-image" />
           </a>
 
-          <button 
-            className="menu-button" 
+          <button
+            className="menu-button"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
-            {isMenuOpen ? '✕' : '☰'}
+            {isMenuOpen ? "✕" : "☰"}
           </button>
 
-          <div className={`nav-links ${isMenuOpen ? 'open' : ''}`}>
-            {navLinks.map(link => (
+          <div className={`nav-links ${isMenuOpen ? "open" : ""}`}>
+            {navLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
@@ -57,39 +64,36 @@ const FirstScreen = () => {
                 {link.label}
               </a>
             ))}
-            <button 
+            {/* <button
               className="contact-button"
               onClick={() => {
                 openContactForm();
                 setIsMenuOpen(false);
               }}
             >
-              Связаться с нами
-            </button>
+              BOOK A DEMO
+            </button> */}
           </div>
         </nav>
       </header>
 
       <div className="hero-content">
         <div className="content-section">
-          <h1 className="title">
-            ResistWise – борьба с бактериальной устойчивостью в реальном времени.
-          </h1>
+          <h1 className="title">Fighting AMR in Real-Time.</h1>
           <p className="subtitle">
-            ResistWise помогает врачам назначать правильные антибиотики в каждый момент времени, используя ИИ и актуальные данные.
+            AI-Powered Precision Antibiotic Prescriptions – ResistWise helps
+            doctors prescribe the right antibiotic at the right time by
+            leveraging AI and real-time resistance data.
           </p>
           <button className="cta-button" onClick={openContactForm}>
-            Запросить демо
+            BOOK A DEMO
           </button>
         </div>
-        <div className="illustration-section">
-          <img 
-            src="/src/assets/Hero.png" 
-            alt="AI-powered antibiotic resistance prediction illustration"
-            className="illustration"
-          />
-        </div>
       </div>
+
+      <button className="scroll-down" onClick={handleScrollDown}>
+        <img src={arrowDown} alt="Scroll down" />
+      </button>
     </div>
   );
 };
