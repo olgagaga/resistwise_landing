@@ -46,7 +46,7 @@
 }
 
 .logo-image {
-  height: 40px;
+  height: 25px;
   width: auto;
 }
 
@@ -57,7 +57,7 @@
 }
 
 .nav-link {
-  color: #4a5568;
+  color: #ffffff;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.2s;
@@ -65,7 +65,7 @@
 }
 
 .nav-link:hover {
-  color: #8c1aff;
+  color: #fbe0ff;
 }
 
 .contact-button {
