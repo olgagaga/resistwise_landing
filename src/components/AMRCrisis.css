@@ -1,0 +1,161 @@
+.amr-crisis-section {
+  padding: 6rem 2rem;
+}
+
+.amr-crisis-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.amr-crisis-title {
+  font-family: 'Arial Rounded MT Bold', sans-serif;
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(to right, #60B5FF, #5342A5);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-align: left;
+}
+
+.amr-crisis-title + h3 {
+  font-size: 1.25rem;
+  color: #4a4a4a;
+  line-height: 1.6;
+  margin-bottom: 3rem;
+  font-weight: 400;
+}
+
+.amr-crisis-title span {
+  color: #ff4d4d;
+}
+
+.amr-crisis-content-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.amr-crisis-facts-container {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.amr-crisis-fact-card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  box-shadow: 0 0 20px #C4C4FF38;
+}
+
+.amr-crisis-wide-card {
+  grid-column: 1 / -1;
+  background-image: url('../assets/misconception-bg.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  /* min-height: 200px; */
+}
+
+.amr-crisis-wide-card .amr-crisis-fact-title,
+.amr-crisis-wide-card .amr-crisis-fact-subtitle {
+  color: #fff;
+  background: none;
+  -webkit-background-clip: initial;
+  background-clip: initial;
+}
+
+.amr-crisis-fact-title {
+  font-family: 'Arial Rounded MT Bold', sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(to right, #60B5FF, #5342A5);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.amr-crisis-fact-subtitle {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #6F6F6F;
+  margin-bottom: 1rem;
+  font-family: 'Arial Rounded MT Bold', Arial, sans-serif;
+}
+
+.amr-crisis-fact-text {
+  color: #6F6F6F;
+  font-weight: 400;
+  line-height: 1.6;
+  font-size: 1rem;
+  font-family: 'SF Compact Rounded', Arial, sans-serif;
+}
+
+.amr-crisis-fact-wide-text {
+  color: #fff;
+  font-weight: 400;
+  line-height: 1.6;
+  font-size: 1rem;
+  font-family: 'SF Compact Rounded', Arial, sans-serif;
+}
+
+.amr-crisis-visualization-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.amr-crisis-map-container {
+  background: #f8fafc;
+  border-radius: 1rem;
+  padding: 1rem;
+  aspect-ratio: 16/9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6b7280;
+  font-size: 1.25rem;
+}
+
+.amr-crisis-counter-container {
+  background: #f8fafc;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.amr-crisis-counter-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 1rem;
+}
+
+.amr-crisis-counter-value {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ff4d4d;
+  margin-bottom: 0.5rem;
+}
+
+.amr-crisis-counter-subtitle {
+  color: #4a4a4a;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .amr-crisis-content-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .amr-crisis-facts-container {
+    grid-template-columns: 1fr;
+  }
+} 
