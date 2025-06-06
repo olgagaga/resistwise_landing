@@ -1,87 +1,5 @@
-import styled from '@emotion/styled';
+import './KeyAdvantages.css';
 import { useContactForm } from '../context/ContactFormContext';
-
-const Section = styled.section`
-  padding: 6rem 2rem;
-  background-color: #f8fafc;
-`;
-
-const Container = styled.div`
-  max-width: 1200px;
-  margin: 0 auto;
-`;
-
-const Title = styled.h2`
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #1a1a1a;
-  text-align: center;
-  margin-bottom: 4rem;
-`;
-
-const FeaturesGrid = styled.div`
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  margin-bottom: 4rem;
-`;
-
-const FeatureCard = styled.div`
-  background: white;
-  padding: 2rem;
-  border-radius: 1rem;
-  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
-  transition: transform 0.2s;
-
-  &:hover {
-    transform: translateY(-5px);
-  }
-`;
-
-const IconContainer = styled.div`
-  width: 64px;
-  height: 64px;
-  background: #8c1aff;
-  border-radius: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 1.5rem;
-  color: white;
-  font-size: 2rem;
-`;
-
-const FeatureTitle = styled.h3`
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: #1a1a1a;
-  margin-bottom: 1rem;
-`;
-
-const FeatureDescription = styled.p`
-  color: #4a4a4a;
-  line-height: 1.6;
-  font-size: 1.1rem;
-`;
-
-const CTAButton = styled.button`
-  display: block;
-  margin: 0 auto;
-  padding: 1rem 2rem;
-  background-color: #8c1aff;
-  color: white;
-  border: none;
-  border-radius: 0.5rem;
-  font-size: 1.1rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.2s;
-
-  &:hover {
-    background-color: #6600cc;
-    transform: translateY(-2px);
-  }
-`;
 
 const KeyAdvantages = () => {
   const { openContactForm } = useContactForm();
@@ -105,27 +23,32 @@ const KeyAdvantages = () => {
   ];
 
   return (
-    <Section id="advantages">
-      <Container>
-        <Title>Почему государственные учреждения доверяют ResistWise?</Title>
+    <section id="advantages" className="key-advantages-section">
+      <div className="key-advantages-container">
+        <h2 className="key-advantages-title">
+          Почему государственные учреждения доверяют ResistWise?
+        </h2>
         
-        <FeaturesGrid>
+        <div className="key-advantages-grid">
           {features.map((feature, index) => (
-            <FeatureCard key={index}>
-              <IconContainer>
+            <div key={index} className="key-advantages-card">
+              <div className="key-advantages-icon">
                 {feature.icon}
-              </IconContainer>
-              <FeatureTitle>{feature.title}</FeatureTitle>
-              <FeatureDescription>{feature.description}</FeatureDescription>
-            </FeatureCard>
+              </div>
+              <h3 className="key-advantages-card-title">{feature.title}</h3>
+              <p className="key-advantages-card-description">{feature.description}</p>
+            </div>
           ))}
-        </FeaturesGrid>
+        </div>
 
-        <CTAButton onClick={openContactForm}>
+        <button 
+          className="key-advantages-cta-button"
+          onClick={openContactForm}
+        >
           Связаться с нами
-        </CTAButton>
-      </Container>
-    </Section>
+        </button>
+      </div>
+    </section>
   );
 };
 

@@ -1,0 +1,81 @@
+.key-advantages-section {
+  padding: 6rem 2rem;
+  background-color: #f8fafc;
+}
+
+.key-advantages-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.key-advantages-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.key-advantages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.key-advantages-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  transition: transform 0.2s;
+}
+
+.key-advantages-card:hover {
+  transform: translateY(-5px);
+}
+
+.key-advantages-icon {
+  width: 64px;
+  height: 64px;
+  background: #8c1aff;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  color: white;
+  font-size: 2rem;
+}
+
+.key-advantages-card-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 1rem;
+}
+
+.key-advantages-card-description {
+  color: #4a4a4a;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+.key-advantages-cta-button {
+  display: block;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  background-color: #8c1aff;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.key-advantages-cta-button:hover {
+  background-color: #6600cc;
+  transform: translateY(-2px);
+} 
