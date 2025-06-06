@@ -1,112 +1,5 @@
-import styled from '@emotion/styled';
 import { useState, useEffect } from 'react';
-
-const Section = styled.section`
-  padding: 6rem 2rem;
-  background-color: #fff;
-`;
-
-const Container = styled.div`
-  max-width: 1200px;
-  margin: 0 auto;
-`;
-
-const Title = styled.h2`
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #1a1a1a;
-  text-align: center;
-  margin-bottom: 3rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-
-  span {
-    color: #ff4d4d;
-  }
-`;
-
-const ContentGrid = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
-  margin-bottom: 4rem;
-
-  @media (max-width: 768px) {
-    grid-template-columns: 1fr;
-  }
-`;
-
-const FactsContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-`;
-
-const FactCard = styled.div`
-  background: #f8fafc;
-  padding: 2rem;
-  border-radius: 1rem;
-  border-left: 4px solid #8c1aff;
-`;
-
-const FactTitle = styled.h3`
-  font-size: 1.25rem;
-  font-weight: 600;
-  color: #1a1a1a;
-  margin-bottom: 1rem;
-`;
-
-const FactText = styled.p`
-  color: #4a4a4a;
-  line-height: 1.6;
-  font-size: 1.1rem;
-`;
-
-const VisualizationContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-`;
-
-const MapContainer = styled.div`
-  background: #f8fafc;
-  border-radius: 1rem;
-  padding: 1rem;
-  aspect-ratio: 16/9;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #6b7280;
-  font-size: 1.25rem;
-`;
-
-const CounterContainer = styled.div`
-  background: #f8fafc;
-  border-radius: 1rem;
-  padding: 2rem;
-  text-align: center;
-`;
-
-const CounterTitle = styled.h3`
-  font-size: 1.25rem;
-  font-weight: 600;
-  color: #1a1a1a;
-  margin-bottom: 1rem;
-`;
-
-const CounterValue = styled.div`
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #ff4d4d;
-  margin-bottom: 0.5rem;
-`;
-
-const CounterSubtitle = styled.p`
-  color: #4a4a4a;
-  font-size: 1rem;
-`;
+import './AMRCrisis.css';
 
 const AMRCrisis = () => {
   const [counter, setCounter] = useState(0);
@@ -136,37 +29,37 @@ const AMRCrisis = () => {
   ];
 
   return (
-    <Section id="amr-crisis">
-      <Container>
-        <Title>
+    <section id="amr-crisis" className="amr-crisis-section">
+      <div className="amr-crisis-container">
+        <h2 className="amr-crisis-title">
           <span>⚠️</span>
           Устойчивость к Противомикробным Препаратам (УПП) – следующая «тихая пандемия»
-        </Title>
+        </h2>
 
-        <ContentGrid>
-          <FactsContainer>
+        <div className="amr-crisis-content-grid">
+          <div className="amr-crisis-facts-container">
             {facts.map((fact, index) => (
-              <FactCard key={index}>
-                <FactTitle>{fact.title}</FactTitle>
-                <FactText>{fact.text}</FactText>
-              </FactCard>
+              <div key={index} className="amr-crisis-fact-card">
+                <h3 className="amr-crisis-fact-title">{fact.title}</h3>
+                <p className="amr-crisis-fact-text">{fact.text}</p>
+              </div>
             ))}
-          </FactsContainer>
+          </div>
 
-          <VisualizationContainer>
-            <MapContainer>
+          <div className="amr-crisis-visualization-container">
+            <div className="amr-crisis-map-container">
               Карта распространения AMR
-            </MapContainer>
+            </div>
             
-            <CounterContainer>
-              <CounterTitle>Смертность от AMR в реальном времени</CounterTitle>
-              <CounterValue>{counter.toLocaleString()}</CounterValue>
-              <CounterSubtitle>случаев с начала отсчёта</CounterSubtitle>
-            </CounterContainer>
-          </VisualizationContainer>
-        </ContentGrid>
-      </Container>
-    </Section>
+            <div className="amr-crisis-counter-container">
+              <h3 className="amr-crisis-counter-title">Смертность от AMR в реальном времени</h3>
+              <div className="amr-crisis-counter-value">{counter.toLocaleString()}</div>
+              <p className="amr-crisis-counter-subtitle">случаев с начала отсчёта</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   );
 };
 
