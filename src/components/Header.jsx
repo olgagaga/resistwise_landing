@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useContactForm } from '../context/ContactFormContext';
 import './Header.css';
+import logo from '../assets/logo.svg';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -29,7 +30,7 @@ const Header = () => {
     <header className={`header-container ${isScrolled ? 'scrolled' : ''}`}>
       <nav className="nav">
         <a href="#" className="logo">
-          <span className="logo-text">ResistWise</span>
+          <img src={logo} alt="ResistWise Logo" className="logo-image" />
         </a>
 
         <button 

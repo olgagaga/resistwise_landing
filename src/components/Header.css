@@ -27,17 +27,12 @@
 .logo {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #1a1a1a;
   text-decoration: none;
 }
 
-.logo-text {
-  background: linear-gradient(135deg, #8c1aff, #6600cc);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.logo-image {
+  height: 40px;
+  width: auto;
 }
 
 .nav-links {
