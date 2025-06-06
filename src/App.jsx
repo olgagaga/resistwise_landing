@@ -1,4 +1,4 @@
-import Hero from './components/Hero'
+import FirstScreen from './components/FirstScreen'
 import HowItWorks from './components/HowItWorks'
 import AMRCrisis from './components/AMRCrisis'
 import KazakhstanProblem from './components/KazakhstanProblem'
@@ -6,7 +6,6 @@ import RiskCalculator from './components/RiskCalculator'
 import KeyAdvantages from './components/KeyAdvantages'
 import Solutions from './components/Solutions'
 import Footer from './components/Footer'
-import Header from './components/Header'
 import Chatbot from './components/Chatbot'
 import ContactForm from './components/ContactForm'
 import { ContactFormProvider, useContactForm } from './context/ContactFormContext'
@@ -16,8 +15,7 @@ function AppContent() {
 
   return (
     <div className="App">
-      <Header />
-      <Hero />
+      <FirstScreen />
       <HowItWorks />
       <AMRCrisis />
       <KazakhstanProblem />
