@@ -4,7 +4,7 @@ import AMRCrisis from './components/AMRCrisis'
 import RiskCalculator from './components/RiskCalculator'
 import KeyAdvantages from './components/KeyAdvantages'
 import Solutions from './components/Solutions'
-import Chatbot from './components/Chatbot'
+import AIChatbot from './components/AIChatbot'
 import ContactForm from './components/ContactForm'
 import LastScreen from './components/LastScreen'
 import { ContactFormProvider, useContactForm } from './context/ContactFormContext'
@@ -21,7 +21,7 @@ function AppContent() {
       <KeyAdvantages />
       {/* <Solutions /> */}
       <LastScreen />
-      {/* <Chatbot /> */}
+      <AIChatbot />
       <ContactForm isOpen={isContactFormOpen} onClose={closeContactForm} />
     </div>
   );
