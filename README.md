@@ -1,8 +1,8 @@
 # ResistWise - AI-Powered AMR Management Platform
 
 <div align="center">
-  <img src="public/logo-icon.svg" alt="ResistWise Logo" width="120" height="120">
-  <h1>ResistWise</h1>
+  <img src="public/logo.png" alt="ResistWise Logo" width="300">
+  <h1>ResistWise Landing Page</h1>
   <p><strong>AI-Powered Precision Antibiotic Prescriptions</strong></p>
   <p>Fighting Antimicrobial Resistance (AMR) in Real-Time</p>
   
@@ -12,7 +12,7 @@
   <a href="https://openai.com/"><img src="https://img.shields.io/badge/OpenAI-GPT--3.5-412991?logo=openai" alt="OpenAI" /></a>
   
   <br/>
-  <a href="https://resistwise-landing.netlify.app/">Live Demo</a> • <a href="./docs/">Documentation</a> • <a href="./docs/API.md">API Reference</a>
+  <a href="https://resistwise.kz/">Live Demo</a> • <a href="./docs/">Documentation</a> • <a href="./docs/API.md">API Reference</a>
 </div>
 
 ---
@@ -21,20 +21,11 @@
 
 ResistWise is a comprehensive web platform designed to combat Antimicrobial Resistance (AMR) by providing AI-powered precision antibiotic prescriptions. The platform helps healthcare professionals make informed decisions about antibiotic usage through real-time resistance data and intelligent recommendations.
 
-### Key Features
-- 🤖 **AI-Powered Chatbot**: Real-time assistance for AMR-related queries
-- 📊 **Risk Calculator**: Interactive tool for assessing AMR risk factors
-- 🎨 **Modern UI/UX**: Responsive design with smooth animations
-- 🔒 **Secure API Integration**: Serverless functions with OpenAI GPT-3.5
-- 📱 **Mobile-First Design**: Optimized for all device sizes
-- ⚡ **Performance Optimized**: Fast loading with Vite and modern React
-
 ## 🚀 Tech Stack
 
 ### Frontend
 - **React 19.1.0** - Latest React with concurrent features
 - **Vite 6.3.5** - Lightning-fast build tool and dev server
-- **Emotion** - CSS-in-JS styling solution
 - **Custom Fonts** - Arial Rounded MT Bold & SF Compact Rounded
 
 ### Backend & APIs
@@ -163,16 +154,6 @@ exports.handler = async function(event, context) {
 };
 ```
 
-## 📊 Risk Calculator
-
-Interactive tool for assessing AMR risk factors:
-
-- **Age-based Assessment**: Different risk levels by age group
-- **Symptom Analysis**: Severity-based risk calculation
-- **Geographic Factors**: Region-specific resistance patterns
-- **Medical History**: Previous antibiotic usage impact
-- **Hospital Exposure**: Healthcare-associated risks
-
 ## 🔧 API Documentation
 
 ### Chat Endpoint
@@ -254,10 +235,8 @@ The application is fully responsive with breakpoints:
 ## 🔄 Development Workflow
 
 1. **Feature Development**: Create feature branches
-2. **Code Review**: Pull request reviews
-3. **Testing**: Manual and automated testing
-4. **Deployment**: Automatic deployment to staging
-5. **Production**: Manual deployment to production
+2. **Deployment**: Automatic deployment to staging
+3. **Production**: Manual deployment to production
 
 ## 🤝 Contributing
 
@@ -280,9 +259,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Contact
 
-- **Project Link**: [https://github.com/yourusername/resistwise_landing](https://github.com/yourusername/resistwise_landing)
-- **Live Demo**: [https://resistwise-landing.netlify.app/](https://resistwise-landing.netlify.app/)
-- **Email**: your.email@example.com
+- **Project Link**: [https://github.com/olgagaga/resistwise_landing](https://github.com/olgagaga/resistwise_landing)
+- **Live Demo**: [https://resistwise.kz/](https://resistwise.kz)
+- **Email**: okuzmich2005@gmail.com
 
 ---
 
