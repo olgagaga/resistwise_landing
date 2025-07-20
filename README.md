@@ -1,7 +1,7 @@
 # ResistWise - AI-Powered AMR Management Platform
 
 <div align="center">
-  <img src="public/logo.png" alt="ResistWise Logo" width="300">
+  <img src="public/logo.png" alt="ResistWise Logo" width="800">
   <h1>ResistWise Landing Page</h1>
   <p><strong>AI-Powered Precision Antibiotic Prescriptions</strong></p>
   <p>Fighting Antimicrobial Resistance (AMR) in Real-Time</p>
